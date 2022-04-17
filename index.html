@@ -111,6 +111,15 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/mixitup.js"></script>
   <script src="./js/app.js"></script>
+
+  <script>
+    let body = document.querySelector("body");
+    let toggle = document.querySelector(".toggle-btn");
+    toggle.onclick = () => {
+      body.classList.toggle("dark");
+    };
+  </script>
+
 </body>
 
 </html>
