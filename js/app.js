@@ -1,4 +1,7 @@
 const header = document.querySelector('header');
+let body = document.querySelector("body");
+let toggle = document.querySelector(".toggle-btn");
+
 /* --------------- Grab elements from DOM --------------- */
 
 /* --------------- Sticky Navbar --------------- */
@@ -33,6 +36,27 @@ sr.reveal(".showcase-image", { origin: "top", delay: 700 });
 /* --------------- Change Active Link On Scroll --------------- */
 
 /* --------------- Change Page Theme --------------- */
+
+let firstTheme = localStorage.getItem("dark");
+
+changeTheme(+firstTheme);
+
+function changeTheme(isDark) {
+    if (isDark) {
+        document.body.classList.add("dark");
+        toggle.classList.replace("uil-moon", "uil-sun");
+        localStorage.setItem("dark", 1);
+    } else {
+        document.body.classList.remove("dark");
+        toggle.classList.replace("uil-sun", "uil-moon");
+        localStorage.setItem("dark", 0);
+    }
+
+}
+
+toggle.addEventListener("click", () => {
+    changeTheme(!document.body.classList.contains("dark"));
+});
 
 /* --------------- Open & Close Navbar Menu --------------- */
 

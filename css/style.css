@@ -33,6 +33,31 @@ body.dark {
   --text-color: hsl(var(--hue-1), 14%, 51%);
 }
 
+body.dark .st1 {
+  fill: hsl(var(--hue-1), 18%, 29%)
+}
+
+body.dark .shape.square {
+  opacity: 0.3;
+}
+
+body.dark .toggle-btn {
+  background-color: var(--bg-color-3);
+}
+
+body.dark .toggle-btn:hover {
+  background-color: brightness(110%);
+}
+
+body.dark .nav-link:hover::after,
+body.dark .nav-link:active::after {
+  opacity: 0.6;
+}
+
+body.dark .form-input:hover {
+  filter: brightness(110%);
+}
+
 /* --------------- General Styles --------------- */
 
 *,
@@ -47,6 +72,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
 }
 
 ::selection {
