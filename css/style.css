@@ -170,6 +170,7 @@ ul {
   border-bottom: 2.5px solid var(--main-color-2);
   border-radius: 0;
   padding: 0.15rem 0;
+  min-width: revert;
 }
 
 .btn.secondary-btn::before {
@@ -591,6 +592,106 @@ header.scrolled .logo {
 }
 
 /* --------------- Sevices Section Styling --------------- */
+
+.services .container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+.milestones {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+}
+
+.milestones h2 {
+  color: var(--main-color-1);
+  font-size: 1.3rem;
+}
+
+.milestones h2 span {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-right: 0.1rem;
+}
+
+.milestones h5 {
+  color: var(--heading-color);
+  line-height: .9;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.services-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 4.4rem;
+}
+
+.srv-card {
+  background-color: var(--bg-color-2);
+  border-radius: 15px;
+  padding: 2.25rem 2.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 280px;
+}
+
+.srv-card h3 {
+  color: var(--heading-color);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.srv-card .text {
+  margin: 0.7rem 0;
+  font-size: 0.7rem;
+}
+
+.srv-card:nth-child(2) {
+  transform: translateY(2.2rem);
+}
+
+.srv-card:nth-child(3) {
+  transform: translateY(-2.2rem);
+}
+
+.services-grid::before {
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 15px solid var(--main-color-1);
+  z-index: -1;
+  opacity: 0.07;
+}
+
+.services .triangle {
+  top: 100%;
+  left: 30%;
+  position: absolute;
+  transform: translate(-50%, -100%);
+}
+
+.services .square {
+  top: 75%;
+  left: -15px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 
 /* --------------- Portfolio Section Styling --------------- */
 
