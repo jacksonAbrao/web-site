@@ -29,19 +29,22 @@
       <div class="links">
         <ul>
           <li>
-            <a href="#" class="nav-link">Home</a>
+            <a href="#home" class="nav-link">Home</a>
           </li>
           <li>
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Services</a>
+            <a href="#skills" class="nav-link">Skills</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Portfolio</a>
+            <a href="#services" class="nav-link">Services</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
         <i class="uil uil-moon toggle-btn"></i>
@@ -51,7 +54,7 @@
 
   <main>
     <!-- --------- Showcase Area Section --------- -->
-    <section class="showcase-area">
+    <section class="showcase-area" id="home">
       <img src="./assets/square1.png" class="shape square" alt="square">
       <div class="container">
         <div class="showcase-info">
@@ -71,7 +74,7 @@
       </div>
     </section>
     <!-- --------- About Section --------- -->
-    <section class="about section">
+    <section class="about section" id="about">
       <img src="./assets/triangle.png" class="shape triangle" alt="">
       <div class="container">
         <div class="about-grid">
@@ -392,7 +395,7 @@
       </div>
     </section>
     <!-- --------- Skills Section --------- -->
-    <section class="skills section">
+    <section class="skills section" id="skills">
       <div class="container">
         <div class="skills-box">
           <div class="box-heading">
@@ -457,7 +460,7 @@
       </div>
     </section>
     <!-- --------- Services Section --------- -->
-    <section class="services section">
+    <section class="services section" id="services">
       <img src="./assets/triangle.png" class="shape triangle">
       <div class="container">
         <div class="services-info">
@@ -527,7 +530,145 @@
       </div>
     </section>
     <!-- --------- Portfolio Section --------- -->
-
+    <section class="portfolio section" id="portfolio">
+      <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="slider-wrap">
+          <div class="prev-btn navigation">
+            <i class="uil uil-angle-left-b"></i>
+          </div>
+          <div class="images">
+            <img src="./assets/port1.jpg">
+            <img src="./assets/port2.png">
+            <img src="./assets/port3.jpg">
+            <img src="./assets/port4.png">
+            <img src="./assets/port5.png">
+            <img src="./assets/port6.jpg">
+          </div>
+          <div class="next-btn navigation">
+            <i class="uil uil-angle-right-b"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="portfolio-header">
+          <div class="portfolio-title">
+            <h3 class="sub-heading">Portfolio</h3>
+            <h1 class="heading">Latest Projects</h1>
+          </div>
+          <div class="filter-btns">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter=".product">Product</button>
+            <button class="filter-btn" data-filter=".inter">Interacting</button>
+            <button class="filter-btn" data-filter=".web">Web App</button>
+          </div>
+        </div>
+        <div class="portfolio-gallery">
+          <div class="mix prt-card inter">
+            <div class="prt-image"> 
+              <img src="./assets/port1.jpg" alt="">
+              <div class="prt-overlay">
+                 <span class="prt-icon" style="--i: 0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i: .15s">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>Olido Interaction</h3>
+              <a href="" class="btn secondary-btn sm">Read more</a>
+            </div>
+          </div>
+          <div class="mix prt-card product">
+            <div class="prt-image"> 
+              <img src="./assets/port2.png" alt="">
+              <div class="prt-overlay">
+                 <span class="prt-icon" style="--i: 0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i: .15s">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>John product design</h3>
+              <a href="" class="btn secondary-btn sm">Read more</a>
+            </div>
+          </div>
+          <div class="mix prt-card web">
+            <div class="prt-image"> 
+              <img src="./assets/port3.jpg" alt="">
+              <div class="prt-overlay">
+                 <span class="prt-icon" style="--i: 0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i: .15s">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>Meta web design</h3>
+              <a href="" class="btn secondary-btn sm">Read more</a>
+            </div>
+          </div>
+          <div class="mix prt-card web">
+            <div class="prt-image"> 
+              <img src="./assets/port4.png" alt="">
+              <div class="prt-overlay">
+                 <span class="prt-icon" style="--i: 0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i: .15s">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>TwiUp web design</h3>
+              <a href="" class="btn secondary-btn sm">Read more</a>
+            </div>
+          </div>
+          <div class="mix prt-card inter">
+            <div class="prt-image"> 
+              <img src="./assets/port5.png" alt="">
+              <div class="prt-overlay">
+                 <span class="prt-icon" style="--i: 0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i: .15s">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>Markus interaction</h3>
+              <a href="" class="btn secondary-btn sm">Read more</a>
+            </div>
+          </div>
+          <div class="mix prt-card web">
+            <div class="prt-image"> 
+              <img src="./assets/port6.jpg" alt="">
+              <div class="prt-overlay">
+                 <span class="prt-icon" style="--i: 0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i: .15s">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>Demga web design</h3>
+              <a href="" class="btn secondary-btn sm">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- --------- Testimonials Section --------- -->
 
     <!-- --------- Contact Section --------- -->

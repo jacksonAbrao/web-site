@@ -9,7 +9,10 @@ const progress_bars = document.querySelectorAll(".skill svg circle");
 const ml_section = document.querySelector(".milestones");
 const ml_counters = document.querySelectorAll(".number span");
 
+const links = document.querySelectorAll('.nav-link');
+
 window.addEventListener("scroll", () => {
+    activeLink();
     if (!skillsPlayed) skillsCounter();
     if (!mlPlayed) mlCounters();
 });
@@ -102,11 +105,36 @@ mlCounters();
 
 /* --------------- Portfolio Filter Animation --------------- */
 
+let mixer = mixitup(".portfolio-gallery", {
+    selectors: {
+        target: ".prt-card",
+    }, animation: {
+        duration: 500,
+    }
+});
+
 /* --------------- Modal Pop Up Animation Animation --------------- */
 
 /* --------------- Modal Pop Up Animation Animation --------------- */
 
 /* --------------- Change Active Link On Scroll --------------- */
+
+function activeLink() {
+    let sections = document.querySelectorAll("section[id]");
+    let passedSections = Array.from(sections).map((sct, i) => {
+        return {
+            y: sct.getBoundingClientRect().top - header.offsetHeight,
+            id: i,
+        };
+    }).filter(sct => sct.y <= 0);
+
+    let currSectionID = passedSections.at(-1).id;
+    links.forEach(l => l.classList.remove("active"));
+    links[currSectionID].classList.add("active");
+}
+
+activeLink()
+
 
 /* --------------- Change Page Theme --------------- */
 
