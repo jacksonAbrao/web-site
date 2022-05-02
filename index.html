@@ -18,6 +18,8 @@
 
   <!-- --------- CSS Files --------- -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -538,7 +540,7 @@
             <i class="uil uil-angle-left-b"></i>
           </div>
           <div class="images">
-            <img src="./assets/port1.jpg">
+            <img class="showImage" src="./assets/port1.jpg">
             <img src="./assets/port2.png">
             <img src="./assets/port3.jpg">
             <img src="./assets/port4.png">
@@ -568,7 +570,7 @@
             <div class="prt-image"> 
               <img src="./assets/port1.jpg" alt="">
               <div class="prt-overlay">
-                 <span class="prt-icon" style="--i: 0s">
+                 <span class="prt-icon zoom-icon" style="--i: 0s">
                   <i class="uil uil-search-plus"></i>
                 </span>
                 <a href="#" class="prt-icon" style="--i: .15s">
@@ -585,7 +587,7 @@
             <div class="prt-image"> 
               <img src="./assets/port2.png" alt="">
               <div class="prt-overlay">
-                 <span class="prt-icon" style="--i: 0s">
+                 <span class="prt-icon zoom-icon" style="--i: 0s">
                   <i class="uil uil-search-plus"></i>
                 </span>
                 <a href="#" class="prt-icon" style="--i: .15s">
@@ -602,7 +604,7 @@
             <div class="prt-image"> 
               <img src="./assets/port3.jpg" alt="">
               <div class="prt-overlay">
-                 <span class="prt-icon" style="--i: 0s">
+                 <span class="prt-icon zoom-icon" style="--i: 0s">
                   <i class="uil uil-search-plus"></i>
                 </span>
                 <a href="#" class="prt-icon" style="--i: .15s">
@@ -619,7 +621,7 @@
             <div class="prt-image"> 
               <img src="./assets/port4.png" alt="">
               <div class="prt-overlay">
-                 <span class="prt-icon" style="--i: 0s">
+                 <span class="prt-icon zoom-icon" style="--i: 0s">
                   <i class="uil uil-search-plus"></i>
                 </span>
                 <a href="#" class="prt-icon" style="--i: .15s">
@@ -636,7 +638,7 @@
             <div class="prt-image"> 
               <img src="./assets/port5.png" alt="">
               <div class="prt-overlay">
-                 <span class="prt-icon" style="--i: 0s">
+                 <span class="prt-icon zoom-icon" style="--i: 0s">
                   <i class="uil uil-search-plus"></i>
                 </span>
                 <a href="#" class="prt-icon" style="--i: .15s">
@@ -653,7 +655,7 @@
             <div class="prt-image"> 
               <img src="./assets/port6.jpg" alt="">
               <div class="prt-overlay">
-                 <span class="prt-icon" style="--i: 0s">
+                 <span class="prt-icon zoom-icon" style="--i: 0s">
                   <i class="uil uil-search-plus"></i>
                 </span>
                 <a href="#" class="prt-icon" style="--i: .15s">
@@ -670,9 +672,71 @@
       </div>
     </section>
     <!-- --------- Testimonials Section --------- -->
-
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-background">
+          <img src="./assets/person2.png" class="person" alt="">
+          <img src="./assets/circle2.png" alt="" class="circle">
+          <img src="./assets/square1.png" alt="" class="square">
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client">
+                <img src="./assets/testi1.png" alt="">
+                <div class="client-info">
+                  <h4>Kelly Williams</h4>
+                  <h5>Executive Officer <a href="#">@ABEnrgy</a></h5>
+                </div>
+              </div>
+              <q class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate quasi adipisci fugiat
+                temporibus ad pariatur corporis illum, voluptatibus incidunt porro, eaque asperiores odio nemo, doloremque totam.
+                Quis, nobis tenetur?</q>
+            </div>
+            <div class="swiper-slide">
+              <div class="client">
+                <img src="./assets/testi2.png" alt="">
+                <div class="client-info">
+                  <h4>Witold Gislenus</h4>
+                  <h5>CEO of <a href="#">@Eco_Focus</a></h5>
+                </div>
+              </div>
+              <q class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate quasi adipisci fugiat
+                temporibus ad pariatur corporis illum, voluptatibus incidunt porro, eaque asperiores odio nemo, doloremque totam.
+                Quis, nobis tenetur?</q>
+            </div>
+            <div class="swiper-slide">
+              <div class="client">
+                <img src="./assets/testi3.png" alt="">
+                <div class="client-info">
+                  <h4>Benn Denis</h4>
+                  <h5>Software Engineer <a href="#">@Epic_Dev</a></h5>
+                </div>
+              </div>
+              <q class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate quasi adipisci fugiat
+                temporibus ad pariatur corporis illum, voluptatibus incidunt porro, eaque asperiores odio nemo, doloremque totam.
+                Quis, nobis tenetur?</q>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="testimonials-title">
+          <h3 class="sub-heading">Testimonials</h3>
+          <h1 class="heading">Hear from my happy clients</h1>
+        </div>
+      </div>
+    </section>
     <!-- --------- Contact Section --------- -->
+    <section class="contact section">
+      <div class="container">
+        <div class="contact-info">
+          <h3 class="sub-heading">Contact me</h3>
+          <h1 class="heading">Let's work together</h1>
+        </div>
 
+        <form action="index.html" class="contact-form"></form>
+      </div>
+    </section>
     <!-- --------- Subscription Section --------- -->
   </main>
 
