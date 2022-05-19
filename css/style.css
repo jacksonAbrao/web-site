@@ -34,7 +34,6 @@ body.dark {
 }
 
 
-
 body.dark .st1 {
   fill: hsl(var(--hue-1), 18%, 29%)
 }
@@ -375,11 +374,11 @@ header.scrolled .logo {
   
 }
 
-.showcase-area .container{
+.showcase-area .container {
   display: grid;
   grid-template-columns: 1fr 550px;
-  height: calc(100vh - 120px);
-  max-height: 600px;
+  min-height: calc(100vh - 120px);
+  height: 600px;
   align-items: center;
 }
 
@@ -410,7 +409,7 @@ header.scrolled .logo {
   width: 100%;
   height: calc(100vh - 120px);
   background-image: linear-gradient(124deg, var(--main-color-1) 53%, var(--main-color-2) 53%);
-  margin-top: -120px;
+  margin-top: -245px;
   border-radius: 0 0 80px 80px;
 }
 
@@ -1225,11 +1224,119 @@ footer .social-media {
 /* --------------- 1000px Screens --------------- */
 
 @media (max-width: 1000px) {
+  .sub-heading {
+    font-size: .75rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .showcase-area .heading {
+    font-size: 2.7rem;
+  }
+
+  .text {
+    font-size: .84rem;
+    margin: 1.3rem 0;
+  }
+
+  .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: .8rem;
+    min-width: 100px;
+    border-radius: 15px;
+  }
+
+  .btn.secondary-btn {
+    font-size: .85rem;
+  }
+
+  .form-input {
+    padding: .8rem 1.45rem;
+    border-radius: 15px;
+    font-size: .8rem;
+  }
+
+  .logo {
+    font-size: 1.45rem;
+  }
+
+  header .logo {
+    height: 100px;
+    line-height: 100px;
+  }
+
+  .nav-link {
+    font-size: .7rem;
+  }
+
+  .showcase-area {
+    padding: 100px 0;
+  }
+
+  .showcase-area .container {
+    grid-template-columns: 1fr 400px;
+    height: 450px;
+  }
+
+  .skills-box {
+    padding: 4rem;
+  }
+
+  .sk-progress {
+    transform: scale(.85);
+  }
+
+  .services .container {
+    column-gap: 2.5rem;
+  }
+
+  .contact .container {
+    column-gap: 2.5rem;
+  }
+
+  .contact-form {
+    padding: 2.5rem 2rem;
+  }
+
+  .contact-form h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact .form-input {
+    margin-bottom: .8rem;
+  }
+
+  .sub-box {
+    padding: 3.5rem 2.5rem;
+    column-gap: 2rem;
+  }
+
+  .filter-btn {
+    font-size: 0.7rem;
+  }
 }
 
 /* --------------- 768px Screens --------------- */
 
 @media (max-width: 768px) {
+  :root {
+    --section-padding: 4.5rem;
+  }
+
+  .triangle {
+    width: 70px;
+  }
+
+  .dots {
+    width: 65px;
+  }
+
+  .square {
+    width: 55px;
+  }
 }
 
 /* --------------- 500px Screens --------------- */
