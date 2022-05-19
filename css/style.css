@@ -1475,11 +1475,67 @@ footer .social-media {
   .showcase-area .container {
     grid-template-columns: 1fr;
     height: revert;
+    justify-items: center;
+    row-gap: 4rem;
   }
 
   .showcase-image {
     min-height: revert;
     height: 100vw;
+    max-height: 570px;
+    max-width: 450px;
+    margin-top: 0;
+    border-radius: 40px;
+  }
+
+  .showcase-area .text {
+    margin: 0.2rem 0;
+  }
+
+  .showcase-info {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .cta {
+    margin-top: 1rem;
+  }
+
+  .showcase-area .circle {
+    width: 120px;
+  }
+
+  .showcase-area .square {
+    left: 80%;
+    top: 20%;
+  }
+
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    order: 3;
+  }
+
+  .heading br {
+    display: none;
+  }
+
+  .about .text {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    margin: 2.5rem 0 0 0;
+    column-gap: 2rem;
+    row-gap: 80px;
+  }
+
+  .icon {
+    width: 50px;
   }
 }
 
