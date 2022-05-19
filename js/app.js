@@ -18,6 +18,9 @@ const images = document.querySelectorAll(".images img");
 const next_btn = document.querySelector(".next-btn");
 const prev_btn = document.querySelector(".prev-btn");
 
+const hamburguer = document.querySelector(".hamburguer");
+const overlay = document.querySelector(".overlay");
+
 window.addEventListener("scroll", () => {
     activeLink();
     if (!skillsPlayed) skillsCounter();
@@ -217,4 +220,16 @@ toggle.addEventListener("click", () => {
 
 /* --------------- Open & Close Navbar Menu --------------- */
 
+hamburguer.addEventListener("click", () => {
+    document.body.classList.toggle("open");
+    document.body.classList.toggle("stopScrolling");
+});
 
+overlay.addEventListener("click", () => {
+    document.body.classList.remove("open");
+});
+
+links.forEach(link => link.addEventListener("click", () => {
+    document.body.classList.remove("open");
+    document.body.classList.remove("stopScrolling");
+}));
