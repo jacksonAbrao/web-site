@@ -164,6 +164,10 @@ ul {
   min-width: 125px;
   text-align: center;
   text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
   transition: .3s;
 }
 
@@ -221,6 +225,40 @@ ul {
 .btn.secondary-btn.sm::before {
   height: 2px;
   bottom: -2px;
+}
+
+.form-input {
+  display: inline-block;
+  padding: .9rem 1.5rem;
+  background: var(--bg-color-3);
+  border: 2px solid var(--bg-color-3);
+  width: 100%;
+  border-radius: 17px;
+  font-family: inherit;
+  font-size: .85rem;
+  color: var(--heading-color);
+  outline: none;
+  transition: .3s;
+}
+
+.form-input::placeholder {
+  color: var(--text-color);
+}
+
+.form-input:hover {
+  filter: brightness(97%);
+}
+
+.form-input:focus,
+.form-input:valid {
+  filter: brightness(100%);
+  background-color: var(--bg-color-1);
+  border-color: var(--main-color-1);
+}
+
+textarea.form-input {
+  resize: none;
+  min-height: 170px;
 }
 
 /* --------------- Navbar Styling --------------- */
@@ -919,6 +957,7 @@ header.scrolled .logo {
 /* --------------- Testimonials Section Styling --------------- */
 
 .testimonials  {
+  overflow: hidden;
   padding: var(--section-padding) 0 calc(var(--section-padding) + 120px);
 }
 
@@ -1040,9 +1079,148 @@ header.scrolled .logo {
 
 /* --------------- Contact Section Styling --------------- */
 
+.contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+
+.mail {
+  color: var(--main-color-1);
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: .3s;
+}
+
+.mail i {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 2px;
+  transform: translateY(3px);
+  transition: .3s margin-left;
+}
+
+.mail:hover {
+  color: var(--main-color-dark-1);
+}
+
+.mail:hover i {
+  margin-left: 10px;
+}
+
+
+.contact-form {
+  background-color: var(--bg-color-2);
+  border-radius: 20px;
+  padding: 3.4rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h3 {
+  color: var(--heading-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  line-height: 0.9;
+}
+
+.contact-form .form-input {
+  margin-bottom: 1.5rem;
+}
+
+.contact .square {
+  position: absolute;
+  left: 17%;
+  bottom: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.contact .triangle {
+  position: absolute;
+  left: 90%;
+  top: 98%;
+  transform: translate(-50%, -50%);
+}
+
 /* --------------- Subscription Section Styling --------------- */
 
+.subscription {
+  overflow: hidden;
+}
+
+.sub-box {
+  background-color: var(--bg-color-2);
+  padding: 5rem;
+  width: 100%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+.sub-box .heading {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.sub-box form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+}
+
+.subscription .map {
+  position: absolute;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.subscription .square {
+  position: absolute;
+  left: 52%;
+  bottom: 7%;
+  transform: translate(0, -50%) scale(0.95);
+}
+
 /* --------------- Footer Styling --------------- */
+
+footer {
+  padding: 4rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .social-media {
+  display: flex;
+}
+
+.social-link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 1rem;
+  background-color: var(--bg-color-1);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.social-link:hover {
+  color: var(--main-color-1);
+}
 
 /* --------------- 1000px Screens --------------- */
 
